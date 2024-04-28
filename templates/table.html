@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ss.lv cars</title>
+</head>
+
+<body>
+    <table>
+        {% for car in cars %}
+        <tr>
+            <td rowspan="2">{{car.brand}}</td>
+            <td rowspan="2">{{car.model}}</td>
+            <td rowspan="2">
+                <img src="{{car.img_src}}" alt="car">
+            </td>
+            <td rowspan="2">{{car.description}}</td>
+            <td>{{car.year}}</td>
+            <td>{{car.engine}}</td>
+            <td>{{car.mileage}}</td>
+            <td>{{car.price}}</td>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <a href="{{car.ss_url}}">{{car.ss_url}}</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table td {
+            border: 1px solid black;    
+            padding:5px;
+            text-align:center;
+        }
+        
+        table td:not(:first-child) {
+            padding: 10px;
+        }
+
+        img {
+            width: 100px;
+        }
+    </style>
+</body>
+
+</html>
+<!-- <tr id="tr_53735987" style="cursor: pointer; background-color: rgb(255, 255, 255);"><td class="msga2 pp0"><input type="checkbox" id="c53735987" name="mid[]" value="53735987_3237_0"></td><td class="msga2"><a href="/msg/lv/transport/cars/skoda/octavia/aomjf.html" id="im53735987"><img src="https://i.ss.lv/gallery/6/1134/283313/56662401.th2.jpg" alt="" class="isfoto foto_list"></a></td><td class="msg2"><div class="d1"><a data="JTdDZyU5NiVBOGglN0UlRDV5JTk4JTgxZiU5NCVBM24lODElOEZ4JTlBJTdFZiU5QyVBN20=|K2dp6NYHc" id="dm_53735987" class="am" href="/msg/lv/transport/cars/skoda/octavia/aomjf.html">Auto ir ļoti laba stavokli, viss ka vajadzeja ir atremontets, restaureta</a></div></td><td class="msga2-o pp6" nowrap="" c="1"><a onclick="return false;" href="https://www.ss.lv/msg/lv/transport/cars/skoda/octavia/aomjf.html" class="amopt">Skoda<br>Octavia</a></td><td class="msga2-o pp6" nowrap="" c="1"><a onclick="return false;" href="https://www.ss.lv/msg/lv/transport/cars/skoda/octavia/aomjf.html" class="amopt">2014</a></td><td class="msga2-o pp6" nowrap="" c="1"><a onclick="return false;" href="https://www.ss.lv/msg/lv/transport/cars/skoda/octavia/aomjf.html" class="amopt">1.6D</a></td><td class="msga2-r pp6" nowrap="" c="1"><a onclick="return false;" href="https://www.ss.lv/msg/lv/transport/cars/skoda/octavia/aomjf.html" class="amopt">538 tūkst.</a></td><td class="msga2-o pp6" nowrap="" c="1"><a onclick="return false;" href="https://www.ss.lv/msg/lv/transport/cars/skoda/octavia/aomjf.html" class="amopt">4,500  €</a></td></tr> -->
