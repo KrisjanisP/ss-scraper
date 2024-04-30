@@ -1,4 +1,5 @@
 from extract_data import extract_rows, extract_row_data
+from car_brands import car_brands
 import requests
 import os
 
@@ -35,3 +36,7 @@ def download_brand_pages(brand,link,dist_dir):
             with open(path, "w") as file:
                 file.write(page_html)
         page_no += 1
+
+def download_all_pages(dist_dir):
+    for brand,link in car_brands:
+        download_brand_pages(brand,link,dist_dir)
