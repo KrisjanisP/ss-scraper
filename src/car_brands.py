@@ -1,0 +1,19 @@
+all_car_brands = ['Acura', 'Alfa romeo', 'Alpina', 'Alpine', 'Asia Motors',
+                  'Aston Martin', 'Audi', 'Austin', 'Austin Healey', 'Bentley',
+                  'Bmw', 'Borgward', 'Brilliance', 'Bugatti', 'Buick', 'Cadillac',
+                  'Caterham', 'Chevrolet', 'Chrysler', 'Citroen', 'Cobra', 'Corvette',
+                  'Cupra', 'Dacia', 'Daewoo', 'Daihatsu', 'Daimler', 'DeTomaso', 'Dodge',
+                  'Eagle', 'Ferrari', 'Fiat', 'Ford', 'Gaz', 'Gmc', 'Holden', 'Honda',
+                  'Hummer', 'Hyundai', 'Infinity', 'Isuzu', 'Iž', 'Jaguar', 'Jeep', 'Kia',
+                  'Lada', 'Lamborghini', 'Lancia', 'Land Rover', 'Lexus',
+                  'Ligier', 'Lincoln', 'Lotus', 'Mahindra', 'Maruti', 'Maserati',
+                  'Maybach', 'Mazda', 'Mercedes', 'Mercury', 'Mg', 'Mini', 'Mitsubishi',
+                  'Morgan', 'Moskvich', 'Nissan', 'Niva', 'Oka', 'Opel', 'Paggio',
+                  'Peugeot', 'Plymouth', 'Pontiac', 'Porsche', 'Proton', 'Renault',
+                  'Rolls Royce', 'Rover', 'Saab', 'Santana', 'Seat', 'Skoda', 'Smart',
+                  'SsangYong', 'Subaru', 'Suzuki', 'Talbot', 'Tata', 'Tofas', 'Toyota',
+                  'Trabant', 'Triumph', 'TVR', 'Uaz', 'Vauxhall', 'Vaz', 'Volkswagen',
+                  'Volvo', 'Wartburg', 'Wiesmann', 'Zaz', 'Cita marka']
+
+car_brands = [('Alfa Romeo', 'https://www.ss.lv/en/transport/cars/alfa-romeo/'), ('Audi', 'https://www.ss.lv/en/transport/cars/audi/'), ('BMW', 'https://www.ss.lv/en/transport/cars/bmw/'), ('Chevrolet', 'https://www.ss.lv/en/transport/cars/chevrolet/'), ('Chrysler', 'https://www.ss.lv/en/transport/cars/chrysler/'), ('Citroen', 'https://www.ss.lv/en/transport/cars/citroen/'), ('Cupra', 'https://www.ss.lv/en/transport/cars/cupra/'), ('Dacia', 'https://www.ss.lv/en/transport/cars/dacia/'), ('Dodge', 'https://www.ss.lv/en/transport/cars/dodge/'), ('Fiat', 'https://www.ss.lv/en/transport/cars/fiat/'), ('Ford', 'https://www.ss.lv/en/transport/cars/ford/'), ('Honda', 'https://www.ss.lv/en/transport/cars/honda/'), ('Hyundai', 'https://www.ss.lv/en/transport/cars/hyundai/'), ('Infiniti', 'https://www.ss.lv/en/transport/cars/infiniti/'), ('Jaguar', 'https://www.ss.lv/en/transport/cars/jaguar/'), ('Jeep', 'https://www.ss.lv/en/transport/cars/jeep/'), ('Kia', 'https://www.ss.lv/en/transport/cars/kia/'), ('Lancia', 'https://www.ss.lv/en/transport/cars/lancia/'), ('Land Rover', 'https://www.ss.lv/en/transport/cars/land-rover/'), ('Lexus', 'https://www.ss.lv/en/transport/cars/lexus/'), ('Mazda', 'https://www.ss.lv/en/transport/cars/mazda/'),
+              ('Mercedes', 'https://www.ss.lv/en/transport/cars/mercedes/'), ('Mini', 'https://www.ss.lv/en/transport/cars/mini/'), ('Mitsubishi', 'https://www.ss.lv/en/transport/cars/mitsubishi/'), ('Nissan', 'https://www.ss.lv/en/transport/cars/nissan/'), ('Opel', 'https://www.ss.lv/en/transport/cars/opel/'), ('Peugeot', 'https://www.ss.lv/en/transport/cars/peugeot/'), ('Porsche', 'https://www.ss.lv/en/transport/cars/porsche/'), ('Renault', 'https://www.ss.lv/en/transport/cars/renault/'), ('Saab', 'https://www.ss.lv/en/transport/cars/saab/'), ('Seat', 'https://www.ss.lv/en/transport/cars/seat/'), ('Skoda', 'https://www.ss.lv/en/transport/cars/skoda/'), ('Smart', 'https://www.ss.lv/en/transport/cars/smart/'), ('Subaru', 'https://www.ss.lv/en/transport/cars/subaru/'), ('Suzuki', 'https://www.ss.lv/en/transport/cars/suzuki/'), ('Toyota', 'https://www.ss.lv/en/transport/cars/toyota/'), ('Volkswagen', 'https://www.ss.lv/en/transport/cars/volkswagen/'), ('Volvo', 'https://www.ss.lv/en/transport/cars/volvo/'), ('Gaz', 'https://www.ss.lv/en/transport/cars/gaz/'), ('Moskvich', 'https://www.ss.lv/en/transport/cars/moskvich/'), ('Vaz', 'https://www.ss.lv/en/transport/cars/vaz/'), ('Others', 'https://www.ss.lv/en/transport/cars/others/')]
