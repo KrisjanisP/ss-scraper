@@ -8,23 +8,26 @@
 </head>
 
 <body>
-    <table>
+    <table >
         {% for car in cars %}
         <tr>
-            <td rowspan="2">{{car.brand}}</td>
-            <td rowspan="2">{{car.model}}</td>
-            <td rowspan="2">
-                <img src="{{car.img_src}}" alt="car">
+            <td rowspan="1">{{car.brand}}</td>
+            <td rowspan="1">{{car.model}}</td>
+            <td rowspan="1">
+                <img src="{{car.tiny_img_url}}" alt="car">
             </td>
-            <td rowspan="2">{{car.description}}</td>
-            <td>{{car.year}}</td>
-            <td>{{car.engine}}</td>
-            <td>{{car.mileage}}</td>
-            <td>{{car.price}}</td>
-        </tr>
-        <tr>
-            <td colspan="4">
-            <a href="{{car.ss_url}}">{{car.ss_url}}</a>
+            <td rowspan="1" style="text-align:left;height:80px;">
+                <a href="{{car.ss_url}}" style="width:100%;height:100%;display:block;align-content:center;">
+                {{car.description}}
+                </a>
+            </td>
+            <td data-score={{(car.power) * 100 / 300}}>{{car.power}} kW</td>
+            <td data-score={{(30-(2024-car.year)) * 100 / 20}}>{{car.year}}</td>
+            <td>{{car.tdo_15}}</td>
+            <td>{{car.mileage}} km</td>
+            <td data-score={{(15000-car.price) * 100 / 9000}}>{{car.price}} €</td>
+            <td>
+                <a href="{{car.ss_url}}">{{car.id}}</a>
             </td>
         </tr>
         {% endfor %}
@@ -39,9 +42,10 @@
             border: 1px solid black;    
             padding:5px;
             text-align:center;
+            overflow:hidden;
         }
         
-        table td:not(:first-child) {
+        table td:not(:nth-child(3)) {
             padding: 10px;
         }
 
@@ -49,6 +53,17 @@
             width: 100px;
         }
     </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var cells = document.querySelectorAll('td[data-score]');
+            cells.forEach(function(cell) {
+              var score = parseInt(cell.getAttribute('data-score'), 10);
+              var green = Math.floor(255 * (score / 100));
+              var red = 255 - green;
+              cell.style.backgroundColor = `rgb(${red}, ${green}, 0)`;
+            });
+          });
+    </script>          
 </body>
 
 </html>
